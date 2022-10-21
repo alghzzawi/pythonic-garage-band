@@ -7,6 +7,12 @@ class Band():
         self.name=name
         self.members=members
         Band.instances.append(self)
+
+    def __str__(self):
+        return f'we are {self.name} and the members {self.members}'
+
+    def __repr__(self):
+        return f"{self.__class__.__name__} instance. Name = {self.name}" 
     
     def play_solos(self):
         member=[]
@@ -73,19 +79,21 @@ class Bassist(Musician):
 
 
 
-# members = [
-#         Guitarist("Kurt Cobain"),
-#         Bassist("Krist Novoselic"),
-#         Drummer("Dave Grohl"),
-#     ]
+if __name__ == "__main__":
+    members = [
+            Guitarist("Kurt Cobain"),
+            Bassist("Krist Novoselic"),
+            Drummer("Dave Grohl"),
+        ]
 
-# some_band = Band("Nirvana", members)
+    some_band = Band("Nirvana", members)
 
-# for member in some_band.members:
-#     if member.get_instrument() == "guitar":
-#         print(member.play_solo())  # == "face melting guitar solo"
-#     elif member.get_instrument() == "bass":
-#         print(member.play_solo())  # == "bom bom buh bom"
-#     elif member.get_instrument() == "drums":
-#         print(member.play_solo())  # == "rattle boom crash"
+    for member in some_band.members:
+        if member.get_instrument() == "guitar":
+            print(member.play_solo())  # == "face melting guitar solo"
+        elif member.get_instrument() == "bass":
+            print(member.play_solo())  # == "bom bom buh bom"
+        elif member.get_instrument() == "drums":
+            print(member.play_solo())  # == "rattle boom crash"
+
 
