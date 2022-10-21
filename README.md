@@ -6,6 +6,7 @@
 ## Author: Mohammad alghzawi
 
 ## Links and Resources
+* ### https://github.com/alghzzawi/pythonic-garage-band/pull/1
 * ### https://github.com/alghzzawi/pythonic-garage-band/pull/2
 
 ## Setup
