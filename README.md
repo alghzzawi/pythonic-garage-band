@@ -6,7 +6,7 @@
 ## Author: Mohammad alghzawi
 
 ## Links and Resources
-* ### None
+* ### https://github.com/alghzzawi/pythonic-garage-band/pull/2
 
 ## Setup
 * ### python 3.9.5
